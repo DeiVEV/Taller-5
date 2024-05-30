@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="./css/cale.css">
+    <script src="./js/cale.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">Calendario minimalista</h1>
+
+    <main>
+        <section id="seccion-calendario">
+            <div id="controles-calendario">
+                <button id="antes" style="color: rgb(2, 1, 1); background-color: rgb(241, 1, 1);"><--</button>
+                <h2 id="actually" style="color: black">mes</h2>
+                <button id="next" style="color: rgb(18, 3, 3); background-color: rgb(255, 2, 2);">--></button>
+            </div>
+            <div id="botones">
+                <button id="anual">anual</button>
+                <button id="mensual">mensual</button>
+                <button id="diaria">diaria</button>
+            </div>
+            <div id="calendario"></div>
+        </section>
+
+        <section id="editar">
+            <h2>¿Que quieres hacer hoy? <br>
+            ¡Agrega y edita tu evento!</h2>
+            <form id="eventscreate">
+                <div>
+                    <label for="numhor">fecha</label>
+                    <input type="date" id="numhor" name="numhor" required>
+                </div>
+                <div>
+                    <label for="hour">hora</label>
+                    <select id="hour" name="hora" required>
+                        <option value="1">1:00 AM</option>
+                        <option value="2">2:00 AM</option>
+                        <option value="3">3:00 AM</option>
+                        <option value="4">4:00 AM</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="event">nota</label>
+                    <textarea id="event" name="descripcion" required></textarea>
+                </div>
+                <div>
+                    <label for="members">participantees</label>
+                    <input type="text" id="members" name="members" required>
+                </div>
+                <button type="submit">Guardar </button>
+                <button type="button" id="btn-borrar" style="background-color: red; color: white;">Borrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

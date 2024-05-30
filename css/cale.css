@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#controles-calendario, #botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#controles-calendario h2, #botones h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#controles-calendario button, #botones button {
+    background-color: transparent;
+    padding: 1px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#eventscreate input,
+#eventscreate select,
+#eventscreate textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#eventscreate button {
+    background-color: transparent;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+#calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+#calendario div {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.diaria {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.diaria div {
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#eventscreate div {
+    margin-bottom: 10px;
+}
+
+#eventscreate label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
